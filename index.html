@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Inicio</title>
+    </head>
+    <body>
+        <div id="grilla">
+
+            <header id="top" class="barraDeNavegacion">
+                <a href="#pie" class="pieDePagina"><img src="./img/flecha-hacia-abajo.png" alt="pie de pagina"></a>
+                <h1>Jim Butcher</h1>
+                <nav id="barra">   
+                    <ul>
+                        <li class="paginaActual">
+                            <a href="index.html" class="actual">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./pages/videos.html">Videos</a>
+                        </li>
+                        <li>
+                            <a href="./pages/tienda.html">Tienda</a>
+                        </li>
+                        <li>
+                            <a href="./pages/autor.html">Autor</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="principal" class="contenido">
+                <div class="notas">
+                    <h2 class="tituloInicio">
+                        Livestream with Jim Butcher and James Marsters! July 5th 12pm PST / 3pm EST
+                    </h2>
+                    <picture>
+                        <source 
+                            srcset="./img/TheLawLivestream1024.jpg"
+                            media="(min-width: 1024px)"
+                        />
+                        <source 
+                            srcset="./img/TheLawLivestream800.jpg"
+                            media="(min-width: 501px)"
+                        />
+                        <source 
+                            srcset="./img/TheLawLivestream500.jpg"
+                            media="(max-width: 500px)"
+                        />
+                        <img 
+                            src="./img/TheLawLivestream.jpg" 
+                            alt="LiveStream"
+                        />
+                    </picture>
+                </div>
+            </section>
+
+            <aside id="left" class="asideLeft">ADLeft</aside>
+
+            <aside id="right" class="asideRight">ADRight</aside>
+
+            <footer id ="pie" class="barraInferior">
+                <a href="#top" class="topDePagina"><img src="./img/flecha-hacia-arriba.png" alt="top de pagina"></a>
+                <div>
+                    <li class="redesSociales1">
+                        <a href="https://www.instagram.com/jimbutchernews/" target="_blank"><img src="./img/instagram.png" alt=""></a>
+                    </li>
+                    <li class="redesSociales2">
+                        <a href="https://twitter.com/longshotauthor" target="_blank"><img src="./img/gorjeo.png" alt=""></a>
+                    </li>
+                </div>
+            </footer>
+            
+        </div>
+    </body>
+</html>

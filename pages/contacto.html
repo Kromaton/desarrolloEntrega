@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div id="grilla">
+
+            <header id="top" class="barraDeNavegacion">
+                <a href="#pie" class="pieDePagina"><img src="../img/flecha-hacia-abajo.png" alt="pie de pagina"></a>
+                <h1>Jim Butcher</h1>
+                <nav id="barra">   
+                    <ul>
+                        <li>
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="videos.html">Videos</a>
+                        </li>
+                        <li>
+                            <a href="tienda.html">Tienda</a>
+                        </li>
+                        <li>
+                            <a href="autor.html">Autor</a>
+                        </li>
+                        <li class="paginaActual">
+                            <a href="contacto.html" class="actual">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <section id="principal" class="contenido">
+                <h2 class="form">Formulario de Contacto</h2>
+                <article class="formularioContacto">
+                    <form>
+                        <div class="nameForm">
+                            <label for="nombre_apellido">Ingrese Nombre y Apellido:<br></label>
+                            <input type="text" placeholder="Nombre y Apellido" name="nombre_apellido" size="30" maxlength="100">
+                        </div>
+                        <div class="mailForm">
+                            <label for="e-mail">E-mail:<br></label>
+                            <input type="email" placeholder="abcd@gmail.com" name="e-mail" size="30" maxlength="100">
+                        </div>
+                        <div class="razonForm">
+                            <label for="razon">Porque desea contactarnos?<br></label>
+                            <select name="razon"> 
+                                <option value="1">Libros</option>
+                                <option value="2">Entrevistas</option>
+                                <option value="3">Varios</option>
+                            </select>
+                        </div>
+                        <div class="observForm">
+                            <label for="Observaciones">Observaciones:<br></label>
+                            <textarea placeholder="Observaciones" cols="30" rows="7"></textarea>
+                        </div>
+                        <div class="confirmaMailForm">
+                            <label>Deseo recibir un e-mail de confirmación.</label>            
+                            <div>
+                                <input type="radio" name="confirma" value="Si"> Si
+                                <input type="radio" name="confirma" value="No"> No
+                            </div>                        
+                        </div>
+                        <div class="actualizForm">
+                            <input type="checkbox" name="acepta" value="1">
+                            <label>Deseo recibir correo acerca de actualizaciones de la pagina.</label>   
+                        </div>
+                        <div class="enviarForm">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>                
+                    </form>
+                </article>
+            </section>
+
+            <aside id="left" class="asideLeft">ADLeft</aside>
+
+            <aside id="right" class="asideRight">ADRight</aside>
+
+            <footer id = pie class="barraInferior">
+                <a href="#top" class="topDePagina"><img src="../img/flecha-hacia-arriba.png" alt="top de pagina"></a>
+                <div>
+                    <li class="redesSociales1">
+                        <a href="https://www.instagram.com/jimbutchernews/" target="_blank"><img src="../img/instagram.png" alt=""></a>
+                    </li>
+                    <li class="redesSociales2">
+                        <a href="https://twitter.com/longshotauthor" target="_blank"><img src="../img/gorjeo.png" alt=""></a>
+                    </li>
+                </div>
+            </footer>
+            
+        </div>
+    </body>
+</html>

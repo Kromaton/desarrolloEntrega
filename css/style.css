@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(81, 85, 126);
+    color: black;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*---------------------------------------AREAS-----------------------------------------*/
+    
+header#top {
+    grid-area: nav;
+    background-color:rgb(214, 213, 168);
+}
+section#principal {
+    grid-area: principal;
+    background-color: rgb(129, 103, 151);
+
+}
+footer#pie {
+    grid-area: pie;
+    background-color: rgb(27, 36, 48);
+
+}
+aside#Left {
+    grid-area: asideLeft;
+    background-color: rgb(81, 85, 126);
+
+}
+aside#Right {
+    grid-area: asideRight;
+    background-color: rgb(81, 85, 126);
+
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*-------------------------------------------MOBILE-----------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+
+
+@media (min-width: 0px) and (max-width: 500px) {
+    #grilla {
+        display: grid;
+        grid-template-areas:
+        "nav"
+        "asideLeft"
+        "principal"
+        "asideRight"
+        "pie";
+        grid-template-rows: 220px 25px 4fr 25px 120px;
+    }
+    
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------HEADER-----------------------------------------*/
+       
+    .pieDePagina {
+        align-items: center;
+    }
+    h1 {    
+        font-size: 400%;
+        text-align: center;
+    }
+    nav#barra ul {
+        align-items: baseline;
+        list-style: none;
+        font-family: serif;
+        font-size: 100%;
+        text-align: center;
+        text-decoration: none;
+
+    }
+    nav li {
+        border: 2px black solid
+    }
+    nav li a {
+        list-style: none;
+        text-decoration: none;
+    }
+    .paginaActual {
+        background-color: rgb(81, 85, 126);
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .actual:visited {
+        color: white;    
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------FOOTER-----------------------------------------*/
+    
+    footer#pie div li {
+        display: inline-block;
+        list-style: none;
+        align-items: center;
+        padding: 0% 5% 0% 5%;
+    }
+    .topDePagina {
+    align-items: center;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------VIDEOS-----------------------------------------*/
+    
+    .flex-container-videoLibros { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-container-entrevistas { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video iframe {
+        width: 230;
+        height: 157;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------TIENDA-----------------------------------------*/
+    
+    .flex-container-libros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        border: 3px black solid;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------CONTACTO-----------------------------------------*/
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*-------------------------------------------TABLET-----------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+
+@media (min-width: 501px) and (max-width: 1023px) {
+
+
+    #grilla {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "nav nav "
+        "asideLeft asideRight"
+        "asideLeft principal"
+        "pie pie";
+        grid-template-columns: 10% auto;
+        grid-template-rows: 120px 25px 4fr 120px;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------HEADER-----------------------------------------*/
+       
+    #principal {
+        padding-top: 20px;
+        border-bottom: 25px rgb(81, 85, 126) solid;
+        border-top: 25px rgb(81, 85, 126) solid;
+    }
+    .pieDePagina {
+        margin-left: 95%;
+    }
+    h1 {    
+        font-size: 400%;
+        text-align: center;
+    }
+    nav {
+        align-items: baseline;
+        list-style: none;
+        font-family: serif;
+        font-size: 150%;
+        text-align: center;
+        text-decoration: none;
+        margin-right: 5%;
+    }
+    nav li {
+        padding-left: 1%;
+        padding-right: 1%;
+        display: inline-block;
+    }
+    nav li a {
+        text-decoration: none;
+    }
+    .paginaActual {
+        background-color: rgb(81, 85, 126);
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .actual:visited {
+        color: white;    
+    }
+ 
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------FOOTER-----------------------------------------*/
+    
+    footer div li {
+        display: inline-block;
+        list-style: none;
+        padding: 0% 5% 0% 5%;
+        
+    }
+    .topDePagina {
+        margin-left: 95%;
+    }
+    
+    
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------INICIO----------------------------------------*/
+
+    .notas {
+        text-align: center;
+        padding: 2% 0% 2% 0%;
+    }
+    .tituloInicio {
+        font-size: 150%;
+        color: black;
+        padding-bottom: 2%;
+    }
+    .notas img {
+        padding: 2% 0% 2% 0%;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------VIDEOS----------------------------------------*/
+
+    .tituloEntrevistas {
+        text-align: center;
+        margin-top: 1%;
+        font-size: 150%;
+        color: black;
+        padding-top: 1%;
+        padding-bottom: 2%;
+
+    }
+    .flex-container-entrevistas, .flex-container-videoLibros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .flex-container-entrevistas h3 {
+        padding: 0.5% 0.5% 0.5% 0.5%;
+    }
+    .flex-container-entrevistas ul li {
+        list-style: none;
+        padding: 13x 25px 12px 25px;
+        text-align: center;
+    }
+    .flex-container-videoLibros {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .flex-container-videoLibros ul {
+        border: 3px solid rgb(129, 103, 151);
+        background-color: rgb(129, 103, 151);
+        margin-right: 2%;
+        margin-left: 2%;
+        padding: 1% 1% 1% 1%;
+    }
+    .flex-container-videoLibros ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 2% 2% 2% 2%;
+    }
+    .flex-container-videoLibros h3 {
+        padding: 0.5% 0% 0.5% 0%;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------TIENDA----------------------------------------*/
+
+    .flex-container-libros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        border: 3px black solid;
+    }
+
+    /*------------------------------------------------------------------------------------------*/
+    /*----------------------------------------AUTOR------------------------------------------*/
+    
+    .flex-container-autor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .acerca {
+        text-align: center;
+        font-size: 300%;
+        padding: 2% 2% 2% 2%;
+    }
+    .flex-container-autor img {
+        border-radius: 1cm 1cm 1cm 1cm;
+    }
+    .flex-container-autor h3 {
+        padding: 2% 10% 2% 15%;
+        font-size: 200%;
+    }
+
+    /*-----------------------------------------------------------------------------------------*/
+    /*-----------------------------------------CONTACTO---------------------------------------*/
+    
+    .form {
+        padding-top: 2%;
+        padding-bottom: 1%;
+        padding-left: 4%;
+    }
+    .formularioContacto {
+        font-size: 20px;
+        padding-top: 1%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+    .formularioContacto div {
+        margin-left: 5%;
+        padding-top:  1%;
+    }
+    .formularioContacto li {
+        list-style: none;
+        display: inline-block;
+    }
+    input {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    textarea {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 20px;
+        width:350px;
+        height:150px;
+        border: 1px dotted #000099;
+    }
+    select {
+        background-color: white;
+        border: none;
+        color: grey;
+        padding: 16px 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    /*-----------------------------------------------------------------------------------------*/
+    /*---------------------------------------------PC-------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------*/
+
+@media (min-width: 1024px) {
+    #grilla {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "nav nav nav"
+        "asideLeft principal asideRight"
+        "pie pie pie";
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 120px 4fr 120px;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/   
+    /*-------------------------------------------HEADER--------------------------------------*/
+
+    .pieDePagina {
+        margin-left: 98.8%;
+    }
+    h1 {    
+        margin-left: 5%;
+        font-size: 400%;
+        text-align: left;
+    }
+    nav {
+        align-items: baseline;
+        list-style: none;
+        font-family: serif;
+        font-size: 150%;
+        text-align: right;
+        text-decoration: none;
+        margin-right: 5%;
+    }
+    nav li {
+        padding-left: 1%;
+        padding-right: 1%;
+        display: inline-block;
+    }
+    nav li a {
+        text-decoration: none;
+    }
+    .paginaActual {
+        background-color: rgb(81, 85, 126);
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .actual:visited {
+        color: white;    
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*--------------------------------------PRINCIPAL---------------------------------------*/   
+    
+    #principal {
+        padding-top: 20px;
+        border-bottom: 25px rgb(81, 85, 126) solid;
+        border-top: 25px rgb(81, 85, 126) solid;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------FOOTER-----------------------------------------*/
+    
+    footer div li {
+        display: inline-block;
+        list-style: none;
+        padding: 0% 5% 0% 5%;
+        
+    }
+    .topDePagina {
+        margin-left: 98%;
+    }
+    
+    /*----------------------------------------------------------------------------------------------*/
+    /*----------------------------------------INDEX------------------------------------------*/
+    
+    .notas {
+        text-align: center;
+        padding: 2% 0% 2% 0%;
+    }
+    .tituloInicio {
+        font-size: 150%;
+        color: black;
+        padding-bottom: 2%;
+    }
+    .notas img {
+        padding: 2% 0% 2% 0%;
+    }
+    
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------VIDEOS----------------------------------------*/
+    
+    .tituloEntrevistas {
+        text-align: center;
+        margin-top: 1%;
+        font-size: 150%;
+        color: black;
+        padding-top: 1%;
+        padding-bottom: 2%;
+
+    }
+    .flex-container-entrevistas, .flex-container-videoLibros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .flex-container-entrevistas h3 {
+        padding: 0.5% 0.5% 0.5% 0.5%;
+    }
+    .flex-container-entrevistas ul li {
+        list-style: none;
+        padding: 13x 25px 12px 25px;
+        text-align: center;
+    }
+    .flex-container-videoLibros {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .flex-container-videoLibros ul {
+        border: 3px solid rgb(129, 103, 151);
+        background-color: rgb(129, 103, 151);
+        margin-right: 2%;
+        margin-left: 2%;
+        padding: 1% 1% 1% 1%;
+    }
+    .flex-container-videoLibros ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 2% 2% 2% 2%;
+    }
+    .flex-container-videoLibros h3 {
+        padding: 0.5% 0% 0.5% 0%;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------TIENDA----------------------------------------*/
+    
+    .flex-container-libros {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .item {
+        border: 2px black solid;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .item h3 {
+        padding: 20px;
+    }
+
+    /*----------------------------------------------------------------------------------------------*/
+    /*---------------------------------------AUTOR----------------------------------------*/
+    
+    .flex-container-autor {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+    .acerca {
+        text-align: center;
+        font-size: 300%;
+        padding: 2% 2% 2% 2%;
+    }
+    .flex-container-autor img {
+        padding-left: 15%;
+        border-radius: 1cm;
+    }
+    .flex-container-autor h3 {
+        padding: 2% 10% 2% 15%;
+        font-size: 200%;
+    }
+    
+    /*-----------------------------------------------------------------------------------------*/
+    /*--------------------------------------CONTACTO----------------------------------------*/
+    
+    .form {
+        padding-top: 2%;
+        padding-bottom: 1%;
+        padding-left: 4%;
+    }
+    .formularioContacto {
+        font-size: 20px;
+        padding-top: 1%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+    .formularioContacto div {
+        margin-left: 5%;
+        padding-top:  1%;
+    }
+    .formularioContacto li {
+        list-style: none;
+        display: inline-block;
+    }
+    input {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    textarea {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 20px;
+        width:350px;
+        height:150px;
+        border: 1px dotted #000099;
+    }
+    select {
+        background-color: white;
+        border: none;
+        color: grey;
+        padding: 16px 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+/*----------------------------------------------------------------------------------------------*/
