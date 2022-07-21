@@ -651,10 +651,10 @@ aside#Right {
 /*-----------------------------------------------------------------------------------------*/
 /*--------------------------------------ANIMACIONES----------------------------------------*/
 
-img:hover {
-    animation: tapas 3s;
+.item img:hover, .fotoAutor img, .notas img {
+    animation: imagenes 3s;
 }
-@keyframes tapas {
+@keyframes imagenes {
     75% {
         transform: scale(1.5);
     }
