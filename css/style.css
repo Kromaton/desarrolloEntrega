@@ -60,40 +60,22 @@ aside#Right {
         "principal"
         "asideRight"
         "pie";
-        grid-template-rows: 118px 30px auto 25px 120px;
+        grid-template-rows: 70px 8px auto 25px 120px;
     }
 
 /*-----------------------------------------------------------------------------------------------*/
 /*-------------------------------------------HEADER----------------------------------------------*/
 
-    .barraDeNavegacion {
-        width: 100%;
-        height: 110px;
-
-    }
     .navbar-brand {    
         font-family: 'Heebo';
         margin-left: 2%;
-        font-size: 450%;
-        text-align: left;
-
+        font-size: 250%;
+        text-align: center;
     }
-    .nav-tabs .nav-link {
-    background-color: rgb(81, 85, 126);
-    border-bottom: rgb(129, 103, 151);
-    color: black;
-    }
-    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        background-color: rgb(129, 103, 151);
-        border-color:rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151);
+    .nav-tabs, .nav-link {
+        background-color: rgb(81, 85, 126);
+        border-bottom: rgb(129, 103, 151);
         color: white;
-    }
-    .nav-link {
-        color: black;
-    }
-    .nav-tabs {
-        padding-left: 15%;
-        border-bottom: 1px solid rgb(81, 85, 126);
     }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -106,8 +88,7 @@ aside#Right {
     footer div li {
         display: inline-block;
         list-style: none;
-        padding: 25px 5% 0% 5%;
-        
+        padding: 25px 5% 0% 5%;   
     }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -127,7 +108,7 @@ aside#Right {
 /*-----------------------------------------------------------------------------------------------*/
 /*---------------------------------------------VIDEOS--------------------------------------------*/
     
-    .card {
+    #cardVideos {
         margin: 5px;
         padding: 3px;
     }
@@ -180,16 +161,17 @@ aside#Right {
 
     .saga {
         padding-top: 10px;
+        padding-bottom: 10px;
     }
     .carousel-item {
         align-items: center;
         align-content: center;
         text-align: center;
-        padding-bottom: 150%;
+        padding-bottom: 50px;
     }
     .libro {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -222,12 +204,12 @@ aside#Right {
         color: rgb(81, 85, 126);
     }  
     #confirmCheck  { 
-        text-align: left;
-        padding-left: 15%;
+        display: flex;
+        justify-content: center;
     } 
    #updateCheck{
-        text-align: left;
-        padding-left: 20%;
+        display: flex;
+        justify-content: center;
     }
    #submit {
         margin: 20px;
@@ -239,66 +221,38 @@ aside#Right {
 /*-----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
-/*------------------------------------------TABLET-----------------------------------------------*/
+/*-----------------------------------------501 to 768--------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 
-@media (min-width: 501px) and (max-width: 991px) {
+@media (min-width: 501px) and (max-width: 768px)  {
     #grilla {
         width: 100%;
         height: 100vh;
         display: grid;
-        grid-template-areas: 
-        "nav nav nav"
-        "asideLeft principal asideRight"
-        "pie pie pie";
-        grid-template-columns: 10% auto 10%;
-        grid-template-rows: 167px 4fr 120px;
+        grid-template-areas:
+        "nav"
+        "asideLeft"
+        "principal"
+        "asideRight"
+        "pie";
+        grid-template-rows: 70px 8px auto 25px 120px;
     }
-    
+
 /*-----------------------------------------------------------------------------------------------*/
 /*-------------------------------------------HEADER----------------------------------------------*/
-
-    .barraDeNavegacion {
-        width: 100%;
-        height: 110px;
-    }
 
     .navbar-brand {    
         font-family: 'Heebo';
         margin-left: 2%;
-        font-size: 450%;
-        text-align: left;
+        font-size: 250%;
+        text-align: center;
     }
-    #navbarNav{
-        align-items: baseline;
-        list-style: none;
-        font-family: serif;
-        font-size: 100%;
-        text-align: right;
-        text-decoration: none;
-        margin-right: 5%;
-        padding: 58px 0px 0px 2%;
-    }
-    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        background-color: rgb(129, 103, 151);
-        border-color:rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151);
+    .nav-tabs, .nav-link {
+        background-color: rgb(81, 85, 126);
+        border-bottom: rgb(129, 103, 151);
         color: white;
-    }
-    .nav-link {
-            color: black;
-    }
-    .nav-tabs {
-        padding-left: 7%;
-        border-bottom: 1px solid rgb(81, 85, 126);
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------HEADER----------------------------------------------*/
-
-    #left , #right {
-        padding-top: 105px;
     }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -311,8 +265,7 @@ aside#Right {
     footer div li {
         display: inline-block;
         list-style: none;
-        padding: 25px 5% 0% 5%;
-        
+        padding: 25px 5% 0% 5%;   
     }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -332,7 +285,7 @@ aside#Right {
 /*-----------------------------------------------------------------------------------------------*/
 /*---------------------------------------------VIDEOS--------------------------------------------*/
     
-    .card {
+    #cardVideos {
         margin: 5px;
         padding: 3px;
     }
@@ -385,13 +338,222 @@ aside#Right {
 
     .saga {
         padding-top: 10px;
+        padding-bottom: 10px;
     }
-    .carousel-item{
-        padding-top: 50px;
-        margin-top: 0px;
-        margin-left: 10%;
-        margin-bottom: 50px;
+    .carousel-item {
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding-bottom: 50px;
     }
+    .libro {
+        display: flex;
+        flex-direction: column;
+    }
+
+/*----------------------------------------------------------------------------------------------*/
+/*--------------------------------------------AUTOR---------------------------------------------*/
+        
+    .flex-container-autor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }    
+    .acerca {
+        text-align: center;
+        font-size: 300%;
+        padding: 2% 2% 2% 2%;
+    }
+    .flex-container-autor img {
+        padding-left: 15%;
+        border-radius: 25px;
+    }
+    .flex-container-autor h3 {
+        padding: 2% 10% 2% 15%;
+        font-size: 200%;
+    }
+        
+/*-----------------------------------------------------------------------------------------*/
+/*----------------------------------------CONTACTO-----------------------------------------*/
+        
+    #comentarioCheck {
+        color: rgb(81, 85, 126);
+    }  
+    #confirmCheck  { 
+        display: flex;
+        justify-content: center;
+    } 
+   #updateCheck{
+        display: flex;
+        justify-content: center;
+    }
+   #submit {
+        margin: 20px;
+        background-color: gray;
+        border-color: grey; 
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*------------------------------------------TABLET-----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+@media (min-width: 769px) and (max-width: 991px) {
+    #grilla {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "nav nav nav"
+        "asideLeft principal asideRight"
+        "pie pie pie";
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 167px 4fr 120px;
+    }
+    
+/*-----------------------------------------------------------------------------------------------*/
+/*-------------------------------------------HEADER----------------------------------------------*/
+
+    .barraDeNavegacion {
+        width: 100%;
+        height: 110px;
+    }
+    .navbar-brand {    
+        font-family: 'Heebo';
+        margin-left: 2%;
+        font-size: 450%;
+        text-align: left;
+    }
+    #navbarNav{
+        align-items: baseline;
+        list-style: none;
+        font-family: serif;
+        font-size: 100%;
+        text-align: right;
+        text-decoration: none;
+        margin-right: 5%;
+        padding: 58px 0px 0px 2%;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        background-color: rgb(129, 103, 151);
+        border-color:rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151);
+        color: white;
+    }
+    .nav-link {
+        color: black;
+    }
+    .nav-tabs {
+        padding-left: 7.5%;
+        border-bottom: 1px solid rgb(81, 85, 126);
+    }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*-------------------------------------------HEADER----------------------------------------------*/
+
+    #left , #right {
+        padding-top: 105px;
+    }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*-------------------------------------------FOOTER----------------------------------------------*/
+    
+    #pie {
+        width: 100%;
+        height: 120px;
+    }
+    footer div li {
+        display: inline-block;
+        list-style: none;
+        padding: 25px 5% 0% 5%;
+    }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*-------------------------------------------PRINCIPAL-------------------------------------------*/   
+        
+    #principal {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-bottom: 25px rgb(81, 85, 126) solid;
+        border-top: 25px rgb(81, 85, 126) solid;
+        color: white;
+    }
+    .card {
+        background-color: rgb(129, 103, 151);
+    }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*---------------------------------------------VIDEOS--------------------------------------------*/
+    
+    #cardVideos {
+        margin: 5px;
+        padding: 3px;
+    }
+    .tituloEntrevistas {
+        text-align: center;
+        margin-top: 1%;
+        font-size: 150%;
+        color: black;
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+    .flex-container-entrevistas, .flex-container-videoLibros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .flex-container-entrevistas h3 {
+        padding: 0.5% 0.5% 0.5% 0.5%;
+    }
+    .flex-container-entrevistas ul li {
+        list-style: none;
+        padding: 13x 25px 12px 25px;
+        text-align: center;
+    }
+    .flex-container-videoLibros {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .flex-container-videoLibros ul {
+        border: 3px solid rgb(129, 103, 151);
+        background-color: rgb(129, 103, 151);
+        margin-right: 2%;
+        margin-left: 2%;
+        padding: 1% 1% 1% 1%;
+    }
+    .flex-container-videoLibros ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 2% 2% 2% 2%;
+    }
+    .flex-container-videoLibros h3 {
+        padding: 0.5% 0% 0.5% 0%;
+    }
+    
+/*-----------------------------------------------------------------------------------------------*/
+/*-------------------------------------------TIENDA----------------------------------------------*/
+
+.saga {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.carousel-item {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.libro {
+    display: flex;
+    flex-direction: column;
+}
 
 /*----------------------------------------------------------------------------------------------*/
 /*--------------------------------------------AUTOR---------------------------------------------*/
@@ -420,14 +582,14 @@ aside#Right {
         color: rgb(81, 85, 126);
     }  
     #confirmCheck  { 
-        text-align: left;
-        padding-left: 35%;
+        display: flex;
+        justify-content: center;
     } 
-   #updateCheck{
-        text-align: left;
-        padding-left: 38%;
+    #updateCheck{
+        display: flex;
+        justify-content: center;
     }
-   #submit {
+    #submit {
         margin: 20px;
         background-color: gray;
         border-color: grey; 
@@ -465,9 +627,8 @@ aside#Right {
     .navbar-brand {    
         font-family: 'Heebo';
         margin-left: 2%;
-        font-size: 450%;
+        font-size: 400%;
         text-align: left;
-
     }
     #navbarNav{
         align-items: baseline;
@@ -477,7 +638,7 @@ aside#Right {
         text-align: right;
         text-decoration: none;
         margin-right: 5%;
-        padding: 58px 0px 0px 2%;
+        padding: 60px 0px 0px 2%;
     }
     .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
         background-color: rgb(81, 85, 126);
@@ -515,7 +676,7 @@ aside#Right {
 /*-----------------------------------------------------------------------------------------------*/
 /*---------------------------------------------VIDEOS--------------------------------------------*/
     
-    .card {
+    #cardVideos {
         margin: 5px;
         padding: 3px;
     }
@@ -569,16 +730,17 @@ aside#Right {
     .saga {
         padding-top: 10px;
     }
-    .carousel-item{
-        padding-top: 50px;
-        margin-top: 0px;
-        margin-left: 25%;
-        margin-bottom: 50px;
-    }
-    .carousel-caption {
-        font-size: 25%;
+    .carousel-item .card {
+        display: flex;
+        flex-direction: row;
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-bottom: 50px;
     }
 
+    #libroColdDays {
+        font-size: 85%;
+    }
 /*----------------------------------------------------------------------------------------------*/
 /*--------------------------------------------AUTOR---------------------------------------------*/
         
@@ -590,7 +752,7 @@ aside#Right {
     }    
     .acerca {
         text-align: center;
-        font-size: 300%;
+        font-size: 250%;
         padding: 2% 2% 2% 2%;
     }
     .flex-container-autor img {
@@ -599,7 +761,7 @@ aside#Right {
     }
     .flex-container-autor h3 {
         padding: 2% 10% 2% 15%;
-        font-size: 200%;
+        font-size: 125%;
     }
         
 /*-----------------------------------------------------------------------------------------*/
@@ -609,12 +771,12 @@ aside#Right {
         color: rgb(81, 85, 126);
     }  
     #confirmCheck  { 
-        text-align: left;
-        padding-left: 35%;
+        display: flex;
+        justify-content: center;
     } 
    #updateCheck{
-        text-align: left;
-        padding-left: 38%;
+        display: flex;
+        justify-content: center;
     }
    #submit {
         margin: 20px;
@@ -633,6 +795,7 @@ aside#Right {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+
 /* ----------------------------------------------
  * Generated by Animista on 2022-7-19 20:57:39
  * Licensed under FreeBSD License.
@@ -645,7 +808,8 @@ aside#Right {
  * animation text-focus-in
  * ----------------------------------------
  */
-@-webkit-keyframes text-focus-in{
+
+ @-webkit-keyframes text-focus-in{
     0% {
         -webkit-filter: blur(12px);
         filter: blur(12px);
@@ -673,6 +837,7 @@ aside#Right {
 	-webkit-animation: swirl-in-fwd 0.6s ease-out both;
 	        animation: swirl-in-fwd 0.6s ease-out both;
 }
+
 /* ----------------------------------------------
  * Generated by Animista on 2022-7-19 21:19:38
  * Licensed under FreeBSD License.
@@ -685,6 +850,7 @@ aside#Right {
  * animation swirl-in-fwd
  * ----------------------------------------
  */
+
  @-webkit-keyframes swirl-in-fwd {
     0% {
       -webkit-transform: rotate(-540deg) scale(0);
