@@ -1,0 +1,82 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Tienda   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@include xsmall {
+    .saga {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        color: white;
+    }
+    .carousel-item {
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding-bottom: 50px;
+        .card {
+            background-color: $bkg-second;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
+@include small {
+    .saga {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        color: white;
+    }
+    .carousel-item {
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding-bottom: 50px;
+        .card {
+            background-color: $bkg-second;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
+@include medium {
+    .saga {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 35px;
+        color: white;
+    }
+    .carousel-item {
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding-bottom: 50px;
+        .card {
+            background-color: $bkg-second;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
+@include large {
+    .saga {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 35px;
+        color: white;
+    }
+    .carousel-item {
+        background-color: $bkg-second;
+        .card {
+            background-color: $bkg-second;
+            display: flex;
+            flex-direction: row;
+            padding-left: 75px;
+            padding-right: 75px;
+            padding-bottom: 50px;
+        }
+    }
+    #libroColdDays {
+        font-size: 85%;
+    }
+}

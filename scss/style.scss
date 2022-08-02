@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+@import "./utilities/variables";
+@import "./utilities/mixin";
+
+@import "./layout/reset";
+@import "./layout/footer";
+
+@import "./layout/areas";
+@import "./layout/grilla";
+@import "./layout/header";
+
+@import "./layout/index";
+@import "./layout/videos";
+@import "./layout/tienda";
+@import "./layout/autor";
+@import "./layout/contacto";
+
+@import "./layout/animaciones";

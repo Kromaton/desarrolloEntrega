@@ -1,0 +1,23 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Areas   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/    
+header#top {
+    grid-area: nav;
+    background-color: $bkg-first;
+}
+section#principal {
+    grid-area: principal;
+    background-color: $bkg-second;
+}
+footer#pie {
+    grid-area: pie;
+    background-color: $bkg-forth;
+}
+aside#Left {
+    grid-area: asideLeft;
+    background-color: $bkg-third;
+}
+aside#Right {
+    grid-area: asideRight;
+    background-color: $bkg-third;
+}

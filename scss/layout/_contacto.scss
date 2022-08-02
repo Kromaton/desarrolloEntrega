@@ -1,0 +1,75 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Contacto   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@include xsmall {
+    #comentarioCheck {
+        color: $bkg-third;
+    }  
+    #confirmCheck  { 
+        display: flex;
+        justify-content: center;
+    } 
+   #updateCheck{
+        display: flex;
+        justify-content: center;
+    }
+   #submit {
+        margin: 20px;
+        background-color: gray;
+        border-color: grey; 
+    }
+}
+@include small {
+    #comentarioCheck {
+        color: $bkg-third;
+    }  
+    #confirmCheck  { 
+        display: flex;
+        justify-content: center;
+    } 
+   #updateCheck{
+        display: flex;
+        justify-content: center;
+    }
+   #submit {
+        margin: 20px;
+        background-color: gray;
+        border-color: grey; 
+    }
+}
+@include medium {
+    #comentarioCheck {
+        color: $bkg-third;
+    }  
+    #confirmCheck  { 
+        display: flex;
+        justify-content: center;
+    } 
+    #updateCheck{
+        display: flex;
+        justify-content: center;
+    }
+    #submit {
+        margin: 20px;
+        background-color: gray;
+        border-color: grey; 
+    }
+}
+@include large {
+    #comentarioCheck {
+        color: $bkg-third;
+    }  
+    #confirmCheck  { 
+        display: flex;
+        justify-content: center;
+    } 
+   #updateCheck{
+        display: flex;
+        justify-content: center;
+    }
+   #submit {
+        margin: 20px;
+        background-color: gray;
+        border-color: grey; 
+    }
+}
