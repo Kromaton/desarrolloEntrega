@@ -1,0 +1,95 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Header   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@include xsmall {
+    .navbar-brand {    
+        font-family: 'Heebo';
+        margin-left: 2%;
+        font-size: 250%;
+        text-align: center;
+    }
+    .nav-tabs, .nav-link {
+        background-color: $bkg-third;
+        border-bottom: $bkg-second;
+        color: white;
+    }
+}
+@include small {
+    .navbar-brand {    
+        font-family: 'Heebo';
+        margin-left: 2%;
+        font-size: 250%;
+        text-align: center;
+    }
+    .nav-tabs, .nav-link {
+        background-color: $bkg-third;
+        border-bottom: $bkg-second;
+        color: white;
+    }
+
+}
+@include medium {
+    .barraDeNavegacion {
+        width: 100%;
+        height: 110px;
+    }
+    .navbar-brand {    
+        font-family: 'Heebo';
+        margin-left: 2%;
+        font-size: 450%;
+        text-align: left;
+    }
+    #navbarNav{
+        align-items: baseline;
+        list-style: none;
+        font-family: serif;
+        font-size: 100%;
+        text-align: right;
+        text-decoration: none;
+        margin-right: 5%;
+        padding: 58px 0px 0px 2%;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        background-color: $bkg-second;
+        border-color: $bkg-second $bkg-second $bkg-second $bkg-second;
+        color: white;
+    }
+    .nav-link {
+        color: black;
+    }
+    .nav-tabs {
+        padding-left: 7.5%;
+        border-bottom: 1px solid $bkg-third;
+    }
+    #left , #right {
+        padding-top: 105px;
+    }
+}
+@include large {
+
+    .barraDeNavegacion {
+        width: 100%;
+        height: 110px;
+    }
+    .navbar-brand {    
+        font-family: 'Heebo';
+        margin-left: 2%;
+        font-size: 400%;
+        text-align: left;
+    }
+    #navbarNav{
+        align-items: baseline;
+        list-style: none;
+        font-family: serif;
+        font-size: 100%;
+        text-align: right;
+        text-decoration: none;
+        margin-right: 5%;
+        padding: 60px 0px 0px 2%;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        background-color: $bkg-third;
+        border-color:$bkg-second $bkg-second $bkg-third $bkg-second;
+        color: white;
+    }
+}

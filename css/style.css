@@ -1,799 +1,632 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap");
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Reset   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bolder;
-    min-height: 100vh;
-    background-color: rgb(81, 85, 126);
-    color: black;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bolder;
+  min-height: 100vh;
+  background-color: rgb(81, 85, 126);
+  color: black;
 }
 
-/*-----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------AREAS----------------------------------------------*/
-    
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Footer   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#pie div {
+  text-align: center;
+}
+#pie div .logo {
+  display: inline-block;
+  padding: 18px 25px 0px 25px;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Areas   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 header#top {
-    grid-area: nav;
-    background-color:rgb(214, 213, 168);
+  grid-area: nav;
+  background-color: rgb(214, 213, 168);
 }
+
 section#principal {
-    grid-area: principal;
-    background-color: rgb(129, 103, 151);
-
+  grid-area: principal;
+  background-color: rgb(129, 103, 151);
 }
+
 footer#pie {
-    grid-area: pie;
-    background-color: rgb(27, 36, 48);
-
+  grid-area: pie;
+  background-color: rgb(27, 36, 48);
 }
+
 aside#Left {
-    grid-area: asideLeft;
-    background-color: rgb(81, 85, 126);
-
+  grid-area: asideLeft;
+  background-color: rgb(81, 85, 126);
 }
+
 aside#Right {
-    grid-area: asideRight;
-    background-color: rgb(81, 85, 126);
+  grid-area: asideRight;
+  background-color: rgb(81, 85, 126);
 }
 
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------MOBILE----------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-
-@media (max-width: 500px)  {
-    #grilla {
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-areas:
-        "nav"
-        "asideLeft"
-        "principal"
-        "asideRight"
-        "pie";
-        grid-template-rows: 70px 8px auto 25px 120px;
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------HEADER----------------------------------------------*/
-
-    .navbar-brand {    
-        font-family: 'Heebo';
-        margin-left: 2%;
-        font-size: 250%;
-        text-align: center;
-    }
-    .nav-tabs, .nav-link {
-        background-color: rgb(81, 85, 126);
-        border-bottom: rgb(129, 103, 151);
-        color: white;
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------FOOTER----------------------------------------------*/
-    
-    #pie {
-        width: 100%;
-        height: 120px;
-    }
-    footer div li {
-        display: inline-block;
-        list-style: none;
-        padding: 25px 5% 0% 5%;   
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------PRINCIPAL-------------------------------------------*/   
-        
-    #principal {
-        margin-top: 20px;
-        padding-top: 20px;
-        border-bottom: 25px rgb(81, 85, 126) solid;
-        border-top: 25px rgb(81, 85, 126) solid;
-        color: white;
-    }
-    .card {
-        background-color: rgb(129, 103, 151);
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*---------------------------------------------VIDEOS--------------------------------------------*/
-    
-    #cardVideos {
-        margin: 5px;
-        padding: 3px;
-    }
-    .tituloEntrevistas {
-        text-align: center;
-        margin-top: 1%;
-        font-size: 150%;
-        color: black;
-        padding-top: 1%;
-        padding-bottom: 2%;
-    }
-    .flex-container-entrevistas, .flex-container-videoLibros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-around;
-        padding: 20px;
-    }
-    .flex-container-entrevistas h3 {
-        padding: 0.5% 0.5% 0.5% 0.5%;
-    }
-    .flex-container-entrevistas ul li {
-        list-style: none;
-        padding: 13x 25px 12px 25px;
-        text-align: center;
-    }
-    .flex-container-videoLibros {
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-    .flex-container-videoLibros ul {
-        border: 3px solid rgb(129, 103, 151);
-        background-color: rgb(129, 103, 151);
-        margin-right: 2%;
-        margin-left: 2%;
-        padding: 1% 1% 1% 1%;
-    }
-    .flex-container-videoLibros ul li {
-        list-style: none;
-        display: inline-block;
-        padding: 2% 2% 2% 2%;
-    }
-    .flex-container-videoLibros h3 {
-        padding: 0.5% 0% 0.5% 0%;
-    }
-    
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------TIENDA----------------------------------------------*/
-
-    .saga {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .carousel-item {
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .libro {
-        display: flex;
-        flex-direction: column;
-    }
-
-/*----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------AUTOR---------------------------------------------*/
-        
-    .flex-container-autor {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }    
-    .acerca {
-        text-align: center;
-        font-size: 300%;
-        padding: 2% 2% 2% 2%;
-    }
-    .flex-container-autor img {
-        padding-left: 15%;
-        border-radius: 1cm;
-    }
-    .flex-container-autor h3 {
-        padding: 2% 10% 2% 15%;
-        font-size: 200%;
-    }
-        
-/*-----------------------------------------------------------------------------------------*/
-/*----------------------------------------CONTACTO-----------------------------------------*/
-        
-    #comentarioCheck {
-        color: rgb(81, 85, 126);
-    }  
-    #confirmCheck  { 
-        display: flex;
-        justify-content: center;
-    } 
-   #updateCheck{
-        display: flex;
-        justify-content: center;
-    }
-   #submit {
-        margin: 20px;
-        background-color: gray;
-        border-color: grey; 
-    }
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Grilla   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 500px) {
+  #grilla {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav" "asideLeft" "principal" "asideRight" "pie";
+    grid-template-rows: 70px 8px auto 25px 100px;
+  }
 }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------501 to 768--------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-
-@media (min-width: 501px) and (max-width: 768px)  {
-    #grilla {
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-areas:
-        "nav"
-        "asideLeft"
-        "principal"
-        "asideRight"
-        "pie";
-        grid-template-rows: 70px 8px auto 25px 120px;
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------HEADER----------------------------------------------*/
-
-    .navbar-brand {    
-        font-family: 'Heebo';
-        margin-left: 2%;
-        font-size: 250%;
-        text-align: center;
-    }
-    .nav-tabs, .nav-link {
-        background-color: rgb(81, 85, 126);
-        border-bottom: rgb(129, 103, 151);
-        color: white;
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------FOOTER----------------------------------------------*/
-    
-    #pie {
-        width: 100%;
-        height: 120px;
-    }
-    footer div li {
-        display: inline-block;
-        list-style: none;
-        padding: 25px 5% 0% 5%;   
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------PRINCIPAL-------------------------------------------*/   
-        
-    #principal {
-        margin-top: 20px;
-        padding-top: 20px;
-        border-bottom: 25px rgb(81, 85, 126) solid;
-        border-top: 25px rgb(81, 85, 126) solid;
-        color: white;
-    }
-    .card {
-        background-color: rgb(129, 103, 151);
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*---------------------------------------------VIDEOS--------------------------------------------*/
-    
-    #cardVideos {
-        margin: 5px;
-        padding: 3px;
-    }
-    .tituloEntrevistas {
-        text-align: center;
-        margin-top: 1%;
-        font-size: 150%;
-        color: black;
-        padding-top: 1%;
-        padding-bottom: 2%;
-    }
-    .flex-container-entrevistas, .flex-container-videoLibros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-around;
-        padding: 20px;
-    }
-    .flex-container-entrevistas h3 {
-        padding: 0.5% 0.5% 0.5% 0.5%;
-    }
-    .flex-container-entrevistas ul li {
-        list-style: none;
-        padding: 13x 25px 12px 25px;
-        text-align: center;
-    }
-    .flex-container-videoLibros {
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-    .flex-container-videoLibros ul {
-        border: 3px solid rgb(129, 103, 151);
-        background-color: rgb(129, 103, 151);
-        margin-right: 2%;
-        margin-left: 2%;
-        padding: 1% 1% 1% 1%;
-    }
-    .flex-container-videoLibros ul li {
-        list-style: none;
-        display: inline-block;
-        padding: 2% 2% 2% 2%;
-    }
-    .flex-container-videoLibros h3 {
-        padding: 0.5% 0% 0.5% 0%;
-    }
-    
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------TIENDA----------------------------------------------*/
-
-    .saga {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .carousel-item {
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .libro {
-        display: flex;
-        flex-direction: column;
-    }
-
-/*----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------AUTOR---------------------------------------------*/
-        
-    .flex-container-autor {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }    
-    .acerca {
-        text-align: center;
-        font-size: 300%;
-        padding: 2% 2% 2% 2%;
-    }
-    .flex-container-autor img {
-        padding-left: 15%;
-        border-radius: 25px;
-    }
-    .flex-container-autor h3 {
-        padding: 2% 10% 2% 15%;
-        font-size: 200%;
-    }
-        
-/*-----------------------------------------------------------------------------------------*/
-/*----------------------------------------CONTACTO-----------------------------------------*/
-        
-    #comentarioCheck {
-        color: rgb(81, 85, 126);
-    }  
-    #confirmCheck  { 
-        display: flex;
-        justify-content: center;
-    } 
-   #updateCheck{
-        display: flex;
-        justify-content: center;
-    }
-   #submit {
-        margin: 20px;
-        background-color: gray;
-        border-color: grey; 
-    }
+@media (min-width: 501px) and (max-width: 768px) {
+  #grilla {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav" "asideLeft" "principal" "asideRight" "pie";
+    grid-template-rows: 70px 8px auto 25px 100px;
+  }
 }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*------------------------------------------TABLET-----------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-
 @media (min-width: 769px) and (max-width: 991px) {
-    #grilla {
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-areas: 
-        "nav nav nav"
-        "asideLeft principal asideRight"
-        "pie pie pie";
-        grid-template-columns: 10% auto 10%;
-        grid-template-rows: 167px 4fr 120px;
-    }
-    
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------HEADER----------------------------------------------*/
-
-    .barraDeNavegacion {
-        width: 100%;
-        height: 110px;
-    }
-    .navbar-brand {    
-        font-family: 'Heebo';
-        margin-left: 2%;
-        font-size: 450%;
-        text-align: left;
-    }
-    #navbarNav{
-        align-items: baseline;
-        list-style: none;
-        font-family: serif;
-        font-size: 100%;
-        text-align: right;
-        text-decoration: none;
-        margin-right: 5%;
-        padding: 58px 0px 0px 2%;
-    }
-    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        background-color: rgb(129, 103, 151);
-        border-color:rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151);
-        color: white;
-    }
-    .nav-link {
-        color: black;
-    }
-    .nav-tabs {
-        padding-left: 7.5%;
-        border-bottom: 1px solid rgb(81, 85, 126);
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------HEADER----------------------------------------------*/
-
-    #left , #right {
-        padding-top: 105px;
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------FOOTER----------------------------------------------*/
-    
-    #pie {
-        width: 100%;
-        height: 120px;
-    }
-    footer div li {
-        display: inline-block;
-        list-style: none;
-        padding: 25px 5% 0% 5%;
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------PRINCIPAL-------------------------------------------*/   
-        
-    #principal {
-        margin-top: 20px;
-        padding-top: 20px;
-        border-bottom: 25px rgb(81, 85, 126) solid;
-        border-top: 25px rgb(81, 85, 126) solid;
-        color: white;
-    }
-    .card {
-        background-color: rgb(129, 103, 151);
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*---------------------------------------------VIDEOS--------------------------------------------*/
-    
-    #cardVideos {
-        margin: 5px;
-        padding: 3px;
-    }
-    .tituloEntrevistas {
-        text-align: center;
-        margin-top: 1%;
-        font-size: 150%;
-        color: black;
-        padding-top: 1%;
-        padding-bottom: 2%;
-    }
-    .flex-container-entrevistas, .flex-container-videoLibros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-around;
-        padding: 20px;
-    }
-    .flex-container-entrevistas h3 {
-        padding: 0.5% 0.5% 0.5% 0.5%;
-    }
-    .flex-container-entrevistas ul li {
-        list-style: none;
-        padding: 13x 25px 12px 25px;
-        text-align: center;
-    }
-    .flex-container-videoLibros {
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-    .flex-container-videoLibros ul {
-        border: 3px solid rgb(129, 103, 151);
-        background-color: rgb(129, 103, 151);
-        margin-right: 2%;
-        margin-left: 2%;
-        padding: 1% 1% 1% 1%;
-    }
-    .flex-container-videoLibros ul li {
-        list-style: none;
-        display: inline-block;
-        padding: 2% 2% 2% 2%;
-    }
-    .flex-container-videoLibros h3 {
-        padding: 0.5% 0% 0.5% 0%;
-    }
-    
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------TIENDA----------------------------------------------*/
-
-.saga {
+  #grilla {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav nav nav" "asideLeft principal asideRight" "pie pie pie";
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 167px 4fr 100px;
+  }
+}
+@media (min-width: 991px) {
+  #grilla {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav nav nav" "asideLeft principal asideRight" "pie pie pie";
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 120px 4fr 100px;
+  }
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Header   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 500px) {
+  .navbar-brand {
+    font-family: "Heebo";
+    margin-left: 2%;
+    font-size: 250%;
+    text-align: center;
+  }
+  .nav-tabs, .nav-link {
+    background-color: rgb(81, 85, 126);
+    border-bottom: rgb(129, 103, 151);
+    color: white;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .navbar-brand {
+    font-family: "Heebo";
+    margin-left: 2%;
+    font-size: 250%;
+    text-align: center;
+  }
+  .nav-tabs, .nav-link {
+    background-color: rgb(81, 85, 126);
+    border-bottom: rgb(129, 103, 151);
+    color: white;
+  }
+}
+@media (min-width: 769px) and (max-width: 990px) {
+  .barraDeNavegacion {
+    width: 100%;
+    height: 110px;
+  }
+  .navbar-brand {
+    font-family: "Heebo";
+    margin-left: 2%;
+    font-size: 450%;
+    text-align: left;
+  }
+  #navbarNav {
+    align-items: baseline;
+    list-style: none;
+    font-family: serif;
+    font-size: 100%;
+    text-align: right;
+    text-decoration: none;
+    margin-right: 5%;
+    padding: 58px 0px 0px 2%;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: rgb(129, 103, 151);
+    border-color: rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151);
+    color: white;
+  }
+  .nav-link {
+    color: black;
+  }
+  .nav-tabs {
+    padding-left: 7.5%;
+    border-bottom: 1px solid rgb(81, 85, 126);
+  }
+  #left, #right {
+    padding-top: 105px;
+  }
+}
+@media (min-width: 991px) {
+  .barraDeNavegacion {
+    width: 100%;
+    height: 110px;
+  }
+  .navbar-brand {
+    font-family: "Heebo";
+    margin-left: 2%;
+    font-size: 400%;
+    text-align: left;
+  }
+  #navbarNav {
+    align-items: baseline;
+    list-style: none;
+    font-family: serif;
+    font-size: 100%;
+    text-align: right;
+    text-decoration: none;
+    margin-right: 5%;
+    padding: 60px 0px 0px 2%;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: rgb(81, 85, 126);
+    border-color: rgb(129, 103, 151) rgb(129, 103, 151) rgb(81, 85, 126) rgb(129, 103, 151);
+    color: white;
+  }
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Index   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 500px) {
+  #principal {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-bottom: 25px rgb(81, 85, 126) solid;
+    border-top: 25px rgb(81, 85, 126) solid;
+    color: white;
+  }
+  #principal .notas .card {
+    background-color: rgb(129, 103, 151);
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  #principal {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-bottom: 25px rgb(81, 85, 126) solid;
+    border-top: 25px rgb(81, 85, 126) solid;
+    color: white;
+  }
+  #principal .notas .card {
+    background-color: rgb(129, 103, 151);
+  }
+}
+@media (min-width: 769px) and (max-width: 990px) {
+  #principal {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-bottom: 25px rgb(81, 85, 126) solid;
+    border-top: 25px rgb(81, 85, 126) solid;
+    color: white;
+  }
+  #principal .notas .card {
+    background-color: rgb(129, 103, 151);
+  }
+}
+@media (min-width: 991px) {
+  #principal {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-bottom: 25px rgb(81, 85, 126) solid;
+    border-top: 25px rgb(81, 85, 126) solid;
+    color: white;
+  }
+  #principal .notas .card {
+    background-color: rgb(129, 103, 151);
+  }
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Videos   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 500px) {
+  .titulo {
+    color: white;
+    font-size: 30px;
+  }
+  .flex-container-entrevistas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(129, 103, 151);
+  }
+  .flex-container-entrevistas .card {
+    margin: 5px;
+    padding: 3px;
+    background-color: rgb(81, 85, 126);
+  }
+  .flex-container-videoLibros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(129, 103, 151);
+  }
+  .flex-container-videoLibros .card {
+    margin: 5px;
+    padding: 3px;
+    background-color: rgb(81, 85, 126);
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .titulo {
+    color: white;
+    font-size: 35px;
+  }
+  .flex-container-entrevistas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(129, 103, 151);
+  }
+  .flex-container-entrevistas .card {
+    margin: 5px;
+    padding: 3px;
+    background-color: rgb(81, 85, 126);
+  }
+  .flex-container-videoLibros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(129, 103, 151);
+  }
+  .flex-container-videoLibros .card {
+    margin: 5px;
+    padding: 3px;
+    background-color: rgb(81, 85, 126);
+  }
+}
+@media (min-width: 769px) and (max-width: 990px) {
+  .titulo {
+    color: white;
+    font-size: 35px;
+  }
+  .flex-container-entrevistas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(129, 103, 151);
+  }
+  .flex-container-entrevistas .card {
+    margin: 5px;
+    padding: 3px;
+    background-color: rgb(81, 85, 126);
+  }
+  .flex-container-videoLibros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(129, 103, 151);
+  }
+  .flex-container-videoLibros .card {
+    margin: 15px;
+    padding: 5px;
+    background-color: rgb(81, 85, 126);
+  }
+}
+@media (min-width: 991px) {
+  .titulo {
+    color: white;
+    font-size: 40px;
+  }
+  .flex-container-entrevistas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: rgb(129, 103, 151);
+  }
+  .flex-container-entrevistas .card {
+    margin: 25px;
+    padding: 3px;
+    background-color: rgb(81, 85, 126);
+  }
+  .flex-container-videoLibros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(129, 103, 151);
+  }
+  .flex-container-videoLibros .card {
+    margin: 5px;
+    padding: 3px;
+    background-color: rgb(81, 85, 126);
+  }
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Tienda   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 500px) {
+  .saga {
     padding-top: 10px;
     padding-bottom: 10px;
-}
-.carousel-item {
+    font-size: 25px;
+    color: white;
+  }
+  .carousel-item {
     align-items: center;
     align-content: center;
     text-align: center;
     padding-bottom: 50px;
+  }
+  .carousel-item .card {
+    background-color: rgb(129, 103, 151);
+    color: white;
+    font-size: 20px;
+  }
 }
-.libro {
+@media (min-width: 501px) and (max-width: 768px) {
+  .saga {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: white;
+  }
+  .carousel-item {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .carousel-item .card {
+    background-color: rgb(129, 103, 151);
+    color: white;
+    font-size: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 990px) {
+  .saga {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    color: white;
+  }
+  .carousel-item {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .carousel-item .card {
+    background-color: rgb(129, 103, 151);
+    color: white;
+    font-size: 20px;
+  }
+}
+@media (min-width: 991px) {
+  .saga {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    color: white;
+  }
+  .carousel-item {
+    background-color: rgb(129, 103, 151);
+  }
+  .carousel-item .card {
+    background-color: rgb(129, 103, 151);
+    display: flex;
+    flex-direction: row;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 50px;
+  }
+  #libroColdDays {
+    font-size: 85%;
+  }
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Autor   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 500px) {
+  .acerca {
+    text-align: center;
+    font-size: 300%;
+    padding: 2% 2% 2% 2%;
+  }
+  .flex-container-autor {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .flex-container-autor .fotoAutor img {
+    border-radius: 1cm;
+  }
+  .flex-container-autor .textoAutor h3 {
+    padding: 2% 10% 2% 15%;
+    font-size: 200%;
+  }
 }
-
-/*----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------AUTOR---------------------------------------------*/
-        
-    .flex-container-autor {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }    
-    .acerca {
-        text-align: center;
-        font-size: 300%;
-    }
-    .flex-container-autor img {
-        border-radius: 1cm;
-    }
-    .flex-container-autor h3 {
-        font-size: 200%;
-    }
-        
-/*-----------------------------------------------------------------------------------------*/
-/*----------------------------------------CONTACTO-----------------------------------------*/
-        
-    #comentarioCheck {
-        color: rgb(81, 85, 126);
-    }  
-    #confirmCheck  { 
-        display: flex;
-        justify-content: center;
-    } 
-    #updateCheck{
-        display: flex;
-        justify-content: center;
-    }
-    #submit {
-        margin: 20px;
-        background-color: gray;
-        border-color: grey; 
-    }
+@media (min-width: 501px) and (max-width: 768px) {
+  .acerca {
+    text-align: center;
+    font-size: 300%;
+    padding: 2% 2% 2% 2%;
+  }
+  .flex-container-autor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .flex-container-autor .fotoAutor img {
+    border-radius: 25px;
+  }
+  .flex-container-autor .textoAutor h3 {
+    padding: 2% 10% 2% 15%;
+    font-size: 200%;
+  }
 }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*---------------------------------------------PC------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------*/
-
+@media (min-width: 769px) and (max-width: 990px) {
+  .acerca {
+    text-align: center;
+    font-size: 300%;
+  }
+  .flex-container-autor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .flex-container-autor .fotoAutor img {
+    border-radius: 25px;
+  }
+  .flex-container-autor .textoAutor h3 {
+    font-size: 200%;
+  }
+}
 @media (min-width: 991px) {
-    #grilla {
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-areas: 
-        "nav nav nav"
-        "asideLeft principal asideRight"
-        "pie pie pie";
-        grid-template-columns: 10% auto 10%;
-        grid-template-rows: 120px 4fr 120px;
-    }
-    
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------HEADER----------------------------------------------*/
-
-    .barraDeNavegacion {
-        width: 100%;
-        height: 110px;
-    }
-    .navbar-brand {    
-        font-family: 'Heebo';
-        margin-left: 2%;
-        font-size: 400%;
-        text-align: left;
-    }
-    #navbarNav{
-        align-items: baseline;
-        list-style: none;
-        font-family: serif;
-        font-size: 100%;
-        text-align: right;
-        text-decoration: none;
-        margin-right: 5%;
-        padding: 60px 0px 0px 2%;
-    }
-    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        background-color: rgb(81, 85, 126);
-        border-color:rgb(129, 103, 151) rgb(129, 103, 151) rgb(81, 85, 126) rgb(129, 103, 151);
-        color: white;
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------FOOTER----------------------------------------------*/
-   
-    #pie {
-        width: 100%;
-        height: 120px;
-    }
-    footer div li {
-        display: inline-block;
-        list-style: none;
-        padding: 25px 5% 0% 5%;
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------PRINCIPAL-------------------------------------------*/   
-        
-    #principal {
-        margin-top: 20px;
-        padding-top: 20px;
-        border-bottom: 25px rgb(81, 85, 126) solid;
-        border-top: 25px rgb(81, 85, 126) solid;
-        color: white;
-    }
-    .card {
-        background-color: rgb(129, 103, 151);
-    }
-
-/*-----------------------------------------------------------------------------------------------*/
-/*---------------------------------------------VIDEOS--------------------------------------------*/
-    
-    #cardVideos {
-        margin: 5px;
-        padding: 3px;
-    }
-    .tituloEntrevistas {
-        text-align: center;
-        margin-top: 1%;
-        font-size: 150%;
-        color: black;
-        padding-top: 1%;
-        padding-bottom: 2%;
-    }
-    .flex-container-entrevistas, .flex-container-videoLibros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-around;
-        padding: 20px;
-    }
-    .flex-container-entrevistas h3 {
-        padding: 0.5% 0.5% 0.5% 0.5%;
-    }
-    .flex-container-entrevistas ul li {
-        list-style: none;
-        padding: 13x 25px 12px 25px;
-        text-align: center;
-    }
-    .flex-container-videoLibros {
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-    .flex-container-videoLibros ul {
-        border: 3px solid rgb(129, 103, 151);
-        background-color: rgb(129, 103, 151);
-        margin-right: 2%;
-        margin-left: 2%;
-        padding: 1% 1% 1% 1%;
-    }
-    .flex-container-videoLibros ul li {
-        list-style: none;
-        display: inline-block;
-        padding: 2% 2% 2% 2%;
-    }
-    .flex-container-videoLibros h3 {
-        padding: 0.5% 0% 0.5% 0%;
-    }
-    
-/*-----------------------------------------------------------------------------------------------*/
-/*-------------------------------------------TIENDA----------------------------------------------*/
-
-    .saga {
-        padding-top: 10px;
-    }
-    .carousel-item .card {
-        display: flex;
-        flex-direction: row;
-        padding-left: 75px;
-        padding-right: 75px;
-        padding-bottom: 50px;
-    }
-
-    #libroColdDays {
-        font-size: 85%;
-    }
-/*----------------------------------------------------------------------------------------------*/
-/*--------------------------------------------AUTOR---------------------------------------------*/
-        
-    .flex-container-autor {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        align-items: center;
-    }    
-    .acerca {
-        text-align: center;
-        font-size: 250%;
-        padding: 2% 2% 2% 2%;
-    }
-    .flex-container-autor img {
-        padding-left: 15%;
-        border-radius: 1cm;
-    }
-    .flex-container-autor h3 {
-        padding: 2% 10% 2% 15%;
-        font-size: 125%;
-    }
-        
-/*-----------------------------------------------------------------------------------------*/
-/*----------------------------------------CONTACTO-----------------------------------------*/
-        
-    #comentarioCheck {
-        color: rgb(81, 85, 126);
-    }  
-    #confirmCheck  { 
-        display: flex;
-        justify-content: center;
-    } 
-   #updateCheck{
-        display: flex;
-        justify-content: center;
-    }
-   #submit {
-        margin: 20px;
-        background-color: gray;
-        border-color: grey; 
-    }
+  .acerca {
+    text-align: center;
+    font-size: 250%;
+    padding: 2% 2% 2% 2%;
+  }
+  .flex-container-autor {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .flex-container-autor .fotoAutor img {
+    border-radius: 25px;
+    padding-left: 15%;
+  }
+  .flex-container-autor .textoAutor h3 {
+    padding: 2% 15% 2% 15%;
+    font-size: 125%;
+  }
 }
-
-/*----------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------*/
-/*--------------------------------------ANIMACIONES----------------------------------------*/
-
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Contacto   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 500px) {
+  #comentarioCheck {
+    color: rgb(81, 85, 126);
+  }
+  #confirmCheck {
+    display: flex;
+    justify-content: center;
+  }
+  #updateCheck {
+    display: flex;
+    justify-content: center;
+  }
+  #submit {
+    margin: 20px;
+    background-color: gray;
+    border-color: grey;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  #comentarioCheck {
+    color: rgb(81, 85, 126);
+  }
+  #confirmCheck {
+    display: flex;
+    justify-content: center;
+  }
+  #updateCheck {
+    display: flex;
+    justify-content: center;
+  }
+  #submit {
+    margin: 20px;
+    background-color: gray;
+    border-color: grey;
+  }
+}
+@media (min-width: 769px) and (max-width: 990px) {
+  #comentarioCheck {
+    color: rgb(81, 85, 126);
+  }
+  #confirmCheck {
+    display: flex;
+    justify-content: center;
+  }
+  #updateCheck {
+    display: flex;
+    justify-content: center;
+  }
+  #submit {
+    margin: 20px;
+    background-color: gray;
+    border-color: grey;
+  }
+}
+@media (min-width: 991px) {
+  #comentarioCheck {
+    color: rgb(81, 85, 126);
+  }
+  #confirmCheck {
+    display: flex;
+    justify-content: center;
+  }
+  #updateCheck {
+    display: flex;
+    justify-content: center;
+  }
+  #submit {
+    margin: 20px;
+    background-color: gray;
+    border-color: grey;
+  }
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Animaciones   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 .navbar-brand {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 /* ----------------------------------------------
@@ -802,40 +635,34 @@ aside#Right {
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-
 /**
  * ----------------------------------------
  * animation text-focus-in
  * ----------------------------------------
  */
-
- @-webkit-keyframes text-focus-in{
-    0% {
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
-    }
+@-webkit-keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 @keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 .fotoAutor {
-	-webkit-animation: swirl-in-fwd 0.6s ease-out both;
-	        animation: swirl-in-fwd 0.6s ease-out both;
+  -webkit-animation: swirl-in-fwd 0.6s ease-out both;
+  animation: swirl-in-fwd 0.6s ease-out both;
 }
 
 /* ----------------------------------------------
@@ -844,34 +671,38 @@ aside#Right {
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-
 /**
  * ----------------------------------------
  * animation swirl-in-fwd
  * ----------------------------------------
  */
-
- @-webkit-keyframes swirl-in-fwd {
-    0% {
-      -webkit-transform: rotate(-540deg) scale(0);
-              transform: rotate(-540deg) scale(0);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotate(0) scale(1);
-              transform: rotate(0) scale(1);
-      opacity: 1;
-    }
+@-webkit-keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fotoAutor {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
 }
 @keyframes fotoAutor {
-    0% {
-      -webkit-transform: rotate(-540deg) scale(0);
-              transform: rotate(-540deg) scale(0);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotate(0) scale(1);
-              transform: rotate(0) scale(1);
-      opacity: 1;
-    }
-}
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

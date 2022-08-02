@@ -1,0 +1,99 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Autor   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@include xsmall {
+    .acerca {
+        text-align: center;
+        font-size: 300%;
+        padding: 2% 2% 2% 2%;
+    }
+    .flex-container-autor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .fotoAutor {
+            img {
+                border-radius: 1cm;
+            }
+        }
+        .textoAutor {
+            h3 {
+                padding: 2% 10% 2% 15%;
+                font-size: 200%;
+            }
+        }
+    }
+}
+@include small {
+    .acerca {
+        text-align: center;
+        font-size: 300%;
+        padding: 2% 2% 2% 2%;
+    }
+    .flex-container-autor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .fotoAutor {
+            img {
+                border-radius: 25px;
+            }
+        }
+        .textoAutor {
+            h3 {
+                padding: 2% 10% 2% 15%;
+                font-size: 200%;
+            }
+        }
+    }
+}
+@include medium {
+    .acerca {
+        text-align: center;
+        font-size: 300%;
+    }
+    .flex-container-autor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .fotoAutor {
+            img {
+                border-radius: 25px;
+            }
+        }
+        .textoAutor {
+            h3 {
+                font-size: 200%;
+            }
+        }
+    }
+}
+@include large {
+    .acerca {
+        text-align: center;
+        font-size: 250%;
+        padding: 2% 2% 2% 2%;
+    }
+    .flex-container-autor {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 50px;
+        .fotoAutor {
+            img {
+                border-radius: 25px;
+                padding-left: 15%;
+            }
+        }
+        .textoAutor {
+            h3 {
+                padding: 2% 15% 2% 15%;
+                font-size: 125%;            
+            }
+        }
+    }
+}

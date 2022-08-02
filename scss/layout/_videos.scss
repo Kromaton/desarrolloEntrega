@@ -1,0 +1,139 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*   Videos   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@include xsmall {
+    .titulo {
+        color: white;
+        font-size: 30px;
+    }
+    .flex-container-entrevistas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: $bkg-second;
+        .card {
+            margin: 5px;
+            padding: 3px;
+            background-color: $bkg-third;
+        }
+    }
+    .flex-container-videoLibros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: $bkg-second;
+        .card {
+            margin: 5px;
+            padding: 3px;
+            background-color: $bkg-third;
+        }    
+    }
+}
+@include small {
+    .titulo {
+        color: white;
+        font-size: 35px;
+    }
+    .flex-container-entrevistas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: $bkg-second;
+        .card {
+            margin: 5px;
+            padding: 3px;
+            background-color: $bkg-third;
+        }
+    }
+    .flex-container-videoLibros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: $bkg-second;
+        .card {
+            margin: 5px;
+            padding: 3px;
+            background-color: $bkg-third;
+        }    
+    }
+}
+@include medium {
+    .titulo {
+        color: white;
+        font-size: 35px;
+    }
+    .flex-container-entrevistas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: $bkg-second;
+        .card {
+            margin: 5px;
+            padding: 3px;
+            background-color: $bkg-third;
+        }
+    }
+    .flex-container-videoLibros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: $bkg-second;
+        .card {
+            margin: 15px;
+            padding: 5px;
+            background-color: $bkg-third;
+        }    
+    }
+}
+@include large {
+    .titulo {
+        color: white;
+        font-size: 40px;
+    }
+    .flex-container-entrevistas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 30px;
+        background-color: $bkg-second;
+        .card {
+            margin: 25px;
+            padding: 3px;
+            background-color: $bkg-third;
+        }
+    }
+    .flex-container-videoLibros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: $bkg-second;
+        .card {
+            margin: 5px;
+            padding: 3px;
+            background-color: $bkg-third;
+        }    
+    }
+}
