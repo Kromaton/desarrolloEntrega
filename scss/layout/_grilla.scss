@@ -7,12 +7,12 @@
         height: 100vh;
         display: grid;
         grid-template-areas:
-        "nav"
-        "asideLeft"
+        "navegacion"
+        "aLeft"
         "principal"
-        "asideRight"
+        "aRight"
         "pie";
-        grid-template-rows: 70px 8px auto 25px 100px;
+        grid-template-rows: auto 25px auto 25px 100px;
     }
 }
 @media (min-width: 501px) and (max-width: 768px)  {
@@ -21,12 +21,12 @@
         height: 100vh;
         display: grid;
         grid-template-areas:
-        "nav"
-        "asideLeft"
+        "navegacion"
+        "aLeft"
         "principal"
-        "asideRight"
+        "aRight"
         "pie";
-        grid-template-rows: 70px 8px auto 25px 100px;
+        grid-template-rows: auto 25px auto 25px 100px;
     }
 }
 @media (min-width: 769px) and (max-width: 991px) {
@@ -35,11 +35,11 @@
         height: 100vh;
         display: grid;
         grid-template-areas: 
-        "nav nav nav"
-        "asideLeft principal asideRight"
+        "navegacion navegacion navegacion"
+        "aLeft principal aRight"
         "pie pie pie";
         grid-template-columns: 10% auto 10%;
-        grid-template-rows: 167px 4fr 100px;
+        grid-template-rows: 105px 4fr 100px;
     }
 }
 @media (min-width: 991px) {
@@ -48,10 +48,10 @@
         height: 100vh;
         display: grid;
         grid-template-areas: 
-        "nav nav nav"
-        "asideLeft principal asideRight"
+        "navegacion navegacion navegacion"
+        "aLeft principal aRight"
         "pie pie pie";
         grid-template-columns: 10% auto 10%;
-        grid-template-rows: 120px 4fr 100px;
+        grid-template-rows: 105px 4fr 100px;
     }
 }

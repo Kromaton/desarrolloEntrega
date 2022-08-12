@@ -21,10 +21,10 @@ body {
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*   Footer   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-#pie div {
+.Bottom div {
   text-align: center;
 }
-#pie div .logo {
+.Bottom div .logo {
   display: inline-block;
   padding: 18px 25px 0px 25px;
 }
@@ -32,29 +32,28 @@ body {
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*   Areas   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-header#top {
-  grid-area: nav;
+.Top {
+  grid-area: navegacion;
   background-color: rgb(214, 213, 168);
 }
 
-section#principal {
+.Principal {
   grid-area: principal;
   background-color: rgb(129, 103, 151);
 }
 
-footer#pie {
+.Bottom {
   grid-area: pie;
   background-color: rgb(27, 36, 48);
 }
 
-aside#Left {
-  grid-area: asideLeft;
+.Left, .Right {
+  grid-area: aLeft;
   background-color: rgb(81, 85, 126);
 }
 
-aside#Right {
-  grid-area: asideRight;
-  background-color: rgb(81, 85, 126);
+.Right {
+  grid-area: aRight;
 }
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -65,8 +64,8 @@ aside#Right {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-areas: "nav" "asideLeft" "principal" "asideRight" "pie";
-    grid-template-rows: 70px 8px auto 25px 100px;
+    grid-template-areas: "navegacion" "aLeft" "principal" "aRight" "pie";
+    grid-template-rows: auto 25px auto 25px 100px;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
@@ -74,8 +73,8 @@ aside#Right {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-areas: "nav" "asideLeft" "principal" "asideRight" "pie";
-    grid-template-rows: 70px 8px auto 25px 100px;
+    grid-template-areas: "navegacion" "aLeft" "principal" "aRight" "pie";
+    grid-template-rows: auto 25px auto 25px 100px;
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
@@ -83,9 +82,9 @@ aside#Right {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-areas: "nav nav nav" "asideLeft principal asideRight" "pie pie pie";
+    grid-template-areas: "navegacion navegacion navegacion" "aLeft principal aRight" "pie pie pie";
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 167px 4fr 100px;
+    grid-template-rows: 105px 4fr 100px;
   }
 }
 @media (min-width: 991px) {
@@ -93,9 +92,9 @@ aside#Right {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-areas: "nav nav nav" "asideLeft principal asideRight" "pie pie pie";
+    grid-template-areas: "navegacion navegacion navegacion" "aLeft principal aRight" "pie pie pie";
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 120px 4fr 100px;
+    grid-template-rows: 105px 4fr 100px;
   }
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -108,10 +107,12 @@ aside#Right {
     font-size: 250%;
     text-align: center;
   }
-  .nav-tabs, .nav-link {
-    background-color: rgb(81, 85, 126);
-    border-bottom: rgb(129, 103, 151);
-    color: white;
+  .nav {
+    background-color: rgb(214, 213, 168);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
@@ -121,21 +122,20 @@ aside#Right {
     font-size: 250%;
     text-align: center;
   }
-  .nav-tabs, .nav-link {
-    background-color: rgb(81, 85, 126);
-    border-bottom: rgb(129, 103, 151);
-    color: white;
+  .nav {
+    background-color: rgb(214, 213, 168);
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-link {
+    color: black;
   }
 }
 @media (min-width: 769px) and (max-width: 990px) {
-  .barraDeNavegacion {
-    width: 100%;
-    height: 110px;
-  }
   .navbar-brand {
     font-family: "Heebo";
     margin-left: 2%;
-    font-size: 450%;
+    font-size: 300%;
     text-align: left;
   }
   #navbarNav {
@@ -148,8 +148,8 @@ aside#Right {
     margin-right: 5%;
     padding: 58px 0px 0px 2%;
   }
-  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    background-color: rgb(129, 103, 151);
+  .nav-link.active {
+    background-color: rgb(81, 85, 126);
     border-color: rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151) rgb(129, 103, 151);
     color: white;
   }
@@ -160,15 +160,8 @@ aside#Right {
     padding-left: 7.5%;
     border-bottom: 1px solid rgb(81, 85, 126);
   }
-  #left, #right {
-    padding-top: 105px;
-  }
 }
 @media (min-width: 991px) {
-  .barraDeNavegacion {
-    width: 100%;
-    height: 110px;
-  }
   .navbar-brand {
     font-family: "Heebo";
     margin-left: 2%;
@@ -185,7 +178,7 @@ aside#Right {
     margin-right: 5%;
     padding: 60px 0px 0px 2%;
   }
-  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  .nav-link.active {
     background-color: rgb(81, 85, 126);
     border-color: rgb(129, 103, 151) rgb(129, 103, 151) rgb(81, 85, 126) rgb(129, 103, 151);
     color: white;
@@ -195,50 +188,46 @@ aside#Right {
 /*   Index   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 @media (max-width: 500px) {
-  #principal {
-    margin-top: 20px;
+  .contenido {
     padding-top: 20px;
-    border-bottom: 25px rgb(81, 85, 126) solid;
-    border-top: 25px rgb(81, 85, 126) solid;
     color: white;
   }
-  #principal .notas .card {
+  .contenido .notas .card {
     background-color: rgb(129, 103, 151);
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
-  #principal {
-    margin-top: 20px;
+  .contenido {
     padding-top: 20px;
-    border-bottom: 25px rgb(81, 85, 126) solid;
-    border-top: 25px rgb(81, 85, 126) solid;
     color: white;
   }
-  #principal .notas .card {
+  .contenido .notas .card {
     background-color: rgb(129, 103, 151);
   }
 }
 @media (min-width: 769px) and (max-width: 990px) {
-  #principal {
-    margin-top: 20px;
+  .Principal {
+    padding-top: 5px;
+    background-color: rgb(81, 85, 126);
+  }
+  .contenido {
     padding-top: 20px;
-    border-bottom: 25px rgb(81, 85, 126) solid;
-    border-top: 25px rgb(81, 85, 126) solid;
     color: white;
   }
-  #principal .notas .card {
+  .contenido .notas .card {
     background-color: rgb(129, 103, 151);
   }
 }
 @media (min-width: 991px) {
-  #principal {
-    margin-top: 20px;
+  .Principal {
+    padding-top: 5px;
+    background-color: rgb(81, 85, 126);
+  }
+  .contenido {
     padding-top: 20px;
-    border-bottom: 25px rgb(81, 85, 126) solid;
-    border-top: 25px rgb(81, 85, 126) solid;
     color: white;
   }
-  #principal .notas .card {
+  .contenido .notas .card {
     background-color: rgb(129, 103, 151);
   }
 }
@@ -467,6 +456,9 @@ aside#Right {
 /*   Autor   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 @media (max-width: 500px) {
+  .contenido {
+    background-color: rgb(129, 103, 151);
+  }
   .acerca {
     text-align: center;
     font-size: 300%;
@@ -487,6 +479,9 @@ aside#Right {
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
+  .contenido {
+    background-color: rgb(129, 103, 151);
+  }
   .acerca {
     text-align: center;
     font-size: 300%;
@@ -507,6 +502,13 @@ aside#Right {
   }
 }
 @media (min-width: 769px) and (max-width: 990px) {
+  .Principal {
+    padding-top: 5px;
+    background-color: rgb(81, 85, 126);
+  }
+  .contenido {
+    background-color: rgb(129, 103, 151);
+  }
   .acerca {
     text-align: center;
     font-size: 300%;
@@ -525,6 +527,13 @@ aside#Right {
   }
 }
 @media (min-width: 991px) {
+  .Principal {
+    padding-top: 5px;
+    background-color: rgb(81, 85, 126);
+  }
+  .contenido {
+    background-color: rgb(129, 103, 151);
+  }
   .acerca {
     text-align: center;
     font-size: 250%;
