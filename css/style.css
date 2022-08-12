@@ -465,8 +465,11 @@ body {
     padding-right: 75px;
     padding-bottom: 50px;
   }
-  #libroColdDays {
-    font-size: 85%;
+  .carousel-item .card .card-body h3 {
+    font-size: 40px;
+  }
+  .carousel-item .card .card-body .card-text {
+    font-size: 20px;
   }
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
