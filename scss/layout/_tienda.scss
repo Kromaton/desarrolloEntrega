@@ -74,9 +74,14 @@
             padding-left: 75px;
             padding-right: 75px;
             padding-bottom: 50px;
+            .card-body {
+                h3 {
+                    font-size: 40px;
+                }
+                .card-text {
+                    font-size: 20px;
+                }
+            }
         }
-    }
-    #libroColdDays {
-        font-size: 85%;
     }
 }
