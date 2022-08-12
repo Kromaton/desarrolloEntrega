@@ -1,23 +1,23 @@
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*   Areas   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/    
-header#top {
-    grid-area: nav;
+.Top {
+    grid-area: navegacion;
     background-color: $bkg-first;
 }
-section#principal {
+.Principal {
     grid-area: principal;
     background-color: $bkg-second;
 }
-footer#pie {
+.Bottom {
     grid-area: pie;
     background-color: $bkg-forth;
 }
-aside#Left {
-    grid-area: asideLeft;
+.Left {
+    grid-area: aLeft;
     background-color: $bkg-third;
 }
-aside#Right {
-    grid-area: asideRight;
-    background-color: $bkg-third;
+.Right {
+    grid-area: aRight;
+    @extend.Left;
 }

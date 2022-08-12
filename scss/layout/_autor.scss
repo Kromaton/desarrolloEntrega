@@ -2,6 +2,9 @@
 /*   Autor   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 @include xsmall {
+    .contenido {
+        background-color: $bkg-second;
+    }
     .acerca {
         text-align: center;
         font-size: 300%;
@@ -26,6 +29,9 @@
     }
 }
 @include small {
+    .contenido {
+        background-color: $bkg-second;
+    }
     .acerca {
         text-align: center;
         font-size: 300%;
@@ -50,6 +56,13 @@
     }
 }
 @include medium {
+    .Principal {
+        padding-top: 5px;
+        background-color: $bkg-third;
+    }
+    .contenido {
+        background-color: $bkg-second;
+    }
     .acerca {
         text-align: center;
         font-size: 300%;
@@ -72,6 +85,13 @@
     }
 }
 @include large {
+    .Principal {
+        padding-top: 5px;
+        background-color: $bkg-third;
+    }
+        .contenido {
+        background-color: $bkg-second;
+    }
     .acerca {
         text-align: center;
         font-size: 250%;

@@ -12,91 +12,88 @@
     </head>
     <body>
         <div id="grilla">
-            <header id="top" class="barraDeNavegacion">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <h1 class="navbar-brand" href="#">Jim Butcher</h1>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="nav nav-tabs">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../index.html">Index</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./videos.html">Videos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page"  href="./tienda.html">Tienda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./autor.html">Autor</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="./contacto.html">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
+            <header class="Top">
+                <nav class="navbar">
+                    <h1 class="navbar-brand" href="#">Jim Butcher</h1>
+                    <div id="navbarNav">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Index</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="./videos.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./autor.html">Autor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </header>
-            <section id="principal" class="contenido">
-                <h2 class="form">Formulario de Contacto</h2>
-                <article class="formularioContacto">
-                    <form>
-                        <div class="input-group">
-                            <span class="input-group-text">Nombre y Apellido</span>
-                            <input type="text" aria-label="First name" class="form-control">
-                            <input type="text" aria-label="Last name" class="form-control">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-text">E-mail</span>
-                            <input type="text" aria-label="E-mail" class="form-control">
-                        </div>
-                        <br>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Porque desea contactarnos?</option>
-                            <option value="1">Libros</option>
-                            <option value="2">Entrevistas</option>
-                            <option value="3">Varios</option>
-                        </select>
-                        <br>
-                        <div class="form-floating" id="comentarioCheck">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 300px"></textarea>
-                            <label for="floatingTextarea2">Comentario</label>
-                        </div>
-                        <br>
-                        <div id="confirmCheck">
-                            <label>Desea recibir un e-mail de confirmación.</label>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">Si</label>
+            <main class="Principal">
+                <section class="contenido">
+                    <h2 class="form">Formulario de Contacto</h2>
+                    <article class="formularioContacto">
+                        <form>
+                            <div class="input-group">
+                                <span class="input-group-text">Nombre y Apellido</span>
+                                <input type="text" aria-label="First name" class="form-control">
+                                <input type="text" aria-label="Last name" class="form-control">
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">No</label>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-text">E-mail</span>
+                                <input type="text" aria-label="E-mail" class="form-control">
                             </div>
-                        </div>
-                        <div class="form-check" id="updateCheck">
+                            <br>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Porque desea contactarnos?</option>
+                                <option value="1">Libros</option>
+                                <option value="2">Entrevistas</option>
+                                <option value="3">Varios</option>
+                            </select>
+                            <br>
+                            <div class="form-floating" id="comentarioCheck">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 300px"></textarea>
+                                <label for="floatingTextarea2">Comentario</label>
+                            </div>
+                            <br>
+                            <div id="confirmCheck">
+                                <label>Desea recibir un e-mail de confirmación.</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Si</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                </div>
+                            </div>
+                            <div class="form-check" id="updateCheck">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                                <label class="form-check-label" for="flexCheckDefault">Deseo recibir actualizaciones del sitio en mi correo.</label>
+                            </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <button type="submit" class="btn btn-primary" id="submit">Enviar Formulario</button>
                             </div>
-                            <label class="form-check-label" for="flexCheckDefault">Deseo recibir actualizaciones del sitio en mi correo.</label>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary" id="submit">Enviar Formulario</button>
-                        </div>
-                    </form>
-                </article>
-            </section>
-            <aside id="left" class="asideLeft">ADLeft</aside>
-            <aside id="right" class="asideRight">ADRight</aside>
-            <footer id ="pie" class="fixed-botton">
+                        </form>
+                    </article>
+                </section>
+            </main>
+            <aside class="Left">ADLeft</aside>
+            <aside class="Right">ADRight</aside>
+            <footer class="Bottom">
                 <div class="fixed-botton">
-                    <a href="https://www.instagram.com/jimbutchernews/" target="_blank"><img src="../img/instagram.png" class="logo" alt=""></a>
-                    <a href="https://twitter.com/longshotauthor" target="_blank"><img src="../img/gorjeo.png" class="logo" alt=""></a>
+                    <a href="https://www.instagram.com/jimbutchernews/" target="_blank"><img src="../img/instagram.png" class="logo" alt="Instagram"></a>
+                    <a href="https://twitter.com/longshotauthor" target="_blank"><img src="../img/gorjeo.png" class="logo" alt="Twitter"></a>
                 </div>
             </footer>
         </div>

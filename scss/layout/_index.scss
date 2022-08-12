@@ -2,11 +2,8 @@
 /*   Index   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 @include xsmall {
-    #principal {
-        margin-top: 20px;
+    .contenido {
         padding-top: 20px;
-        border-bottom: 25px $bkg-third solid;
-        border-top: 25px $bkg-third solid;
         color: white;
         .notas {
             .card {
@@ -16,11 +13,8 @@
     }
 }
 @include small {
-    #principal {
-        margin-top: 20px;
+    .contenido {
         padding-top: 20px;
-        border-bottom: 25px $bkg-third solid;
-        border-top: 25px $bkg-third solid;
         color: white;
         .notas {
             .card {
@@ -30,11 +24,12 @@
     }
 }
 @include medium {
-    #principal {
-        margin-top: 20px;
+    .Principal {
+        padding-top: 5px;
+        background-color: $bkg-third;
+    }
+    .contenido {
         padding-top: 20px;
-        border-bottom: 25px $bkg-third solid;
-        border-top: 25px $bkg-third solid;
         color: white;
         .notas {
             .card {
@@ -44,11 +39,12 @@
     }
 }
 @include large {
-    #principal {
-        margin-top: 20px;
+    .Principal {
+        padding-top: 5px;
+        background-color: $bkg-third;
+    }
+    .contenido {
         padding-top: 20px;
-        border-bottom: 25px $bkg-third solid;
-        border-top: 25px $bkg-third solid;
         color: white;
         .notas {
             .card {

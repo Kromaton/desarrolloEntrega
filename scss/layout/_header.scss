@@ -8,10 +8,12 @@
         font-size: 250%;
         text-align: center;
     }
-    .nav-tabs, .nav-link {
-        background-color: $bkg-third;
-        border-bottom: $bkg-second;
-        color: white;
+    .nav {
+        background-color: $bkg-first;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 @include small {
@@ -21,22 +23,23 @@
         font-size: 250%;
         text-align: center;
     }
-    .nav-tabs, .nav-link {
-        background-color: $bkg-third;
-        border-bottom: $bkg-second;
-        color: white;
+
+    .nav {
+        background-color: $bkg-first;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-link {
+        color: black;
     }
 
 }
 @include medium {
-    .barraDeNavegacion {
-        width: 100%;
-        height: 110px;
-    }
     .navbar-brand {    
         font-family: 'Heebo';
         margin-left: 2%;
-        font-size: 450%;
+        font-size: 300%;
         text-align: left;
     }
     #navbarNav{
@@ -49,8 +52,8 @@
         margin-right: 5%;
         padding: 58px 0px 0px 2%;
     }
-    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        background-color: $bkg-second;
+    .nav-link.active {
+        background-color: $bkg-third;
         border-color: $bkg-second $bkg-second $bkg-second $bkg-second;
         color: white;
     }
@@ -61,16 +64,8 @@
         padding-left: 7.5%;
         border-bottom: 1px solid $bkg-third;
     }
-    #left , #right {
-        padding-top: 105px;
-    }
 }
 @include large {
-
-    .barraDeNavegacion {
-        width: 100%;
-        height: 110px;
-    }
     .navbar-brand {    
         font-family: 'Heebo';
         margin-left: 2%;
@@ -87,7 +82,7 @@
         margin-right: 5%;
         padding: 60px 0px 0px 2%;
     }
-    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    .nav-link.active {
         background-color: $bkg-third;
         border-color:$bkg-second $bkg-second $bkg-third $bkg-second;
         color: white;

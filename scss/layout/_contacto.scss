@@ -10,7 +10,8 @@
         justify-content: center;
     } 
     #updateCheck{
-        @extend #confirmCheck
+        display: flex;
+        justify-content: center;
     }
    #submit {
         margin: 20px;
@@ -27,7 +28,8 @@
         justify-content: center;
     } 
     #updateCheck{
-        @extend #confirmCheck
+        display: flex;
+        justify-content: center;
     }
    #submit {
         margin: 20px;
@@ -44,7 +46,8 @@
         justify-content: center;
     } 
     #updateCheck{
-        @extend #confirmCheck;
+        display: flex;
+        justify-content: center;
     }
     #submit {
         margin: 20px;
@@ -61,7 +64,8 @@
         justify-content: center;
     } 
     #updateCheck{
-        @extend #confirmCheck
+        display: flex;
+        justify-content: center;
     }
    #submit {
         margin: 20px;
