@@ -1,23 +1,23 @@
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*   Areas   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/    
-.Top {
+.top {
     grid-area: navegacion;
     background-color: $bkg-first;
 }
-.Principal {
+.principal {
     grid-area: principal;
     background-color: $bkg-second;
 }
-.Bottom {
+.bottom {
     grid-area: pie;
     background-color: $bkg-forth;
 }
-.Left {
+.left {
     grid-area: aLeft;
     background-color: $bkg-third;
 }
-.Right {
+.right {
     grid-area: aRight;
-    @extend.Left;
+    @extend.left;
 }

@@ -21,10 +21,10 @@ body {
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*   Footer   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-.Bottom div {
+.bottom div {
   text-align: center;
 }
-.Bottom div .logo {
+.bottom div .logo {
   display: inline-block;
   padding: 18px 25px 0px 25px;
 }
@@ -32,27 +32,27 @@ body {
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*   Areas   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-.Top {
+.top {
   grid-area: navegacion;
   background-color: rgb(214, 213, 168);
 }
 
-.Principal {
+.principal {
   grid-area: principal;
   background-color: rgb(129, 103, 151);
 }
 
-.Bottom {
+.bottom {
   grid-area: pie;
   background-color: rgb(27, 36, 48);
 }
 
-.Left, .Right {
+.left, .right {
   grid-area: aLeft;
   background-color: rgb(81, 85, 126);
 }
 
-.Right {
+.right {
   grid-area: aRight;
 }
 
@@ -107,12 +107,21 @@ body {
     font-size: 250%;
     text-align: center;
   }
+  .navbarNav {
+    list-style: none;
+    font-family: serif;
+    font-size: 100%;
+  }
   .nav {
+    font-size: 100%;
     background-color: rgb(214, 213, 168);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .nav-link {
+    color: black;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
@@ -121,6 +130,11 @@ body {
     margin-left: 2%;
     font-size: 250%;
     text-align: center;
+  }
+  .navbarNav {
+    list-style: none;
+    font-family: serif;
+    font-size: 100%;
   }
   .nav {
     background-color: rgb(214, 213, 168);
@@ -138,7 +152,7 @@ body {
     font-size: 300%;
     text-align: left;
   }
-  #navbarNav {
+  .navbarNav {
     align-items: baseline;
     list-style: none;
     font-family: serif;
@@ -168,7 +182,7 @@ body {
     font-size: 400%;
     text-align: left;
   }
-  #navbarNav {
+  .navbarNav {
     align-items: baseline;
     list-style: none;
     font-family: serif;
@@ -182,6 +196,9 @@ body {
     background-color: rgb(81, 85, 126);
     border-color: rgb(129, 103, 151) rgb(129, 103, 151) rgb(81, 85, 126) rgb(129, 103, 151);
     color: white;
+  }
+  .nav-link {
+    color: black;
   }
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -206,7 +223,7 @@ body {
   }
 }
 @media (min-width: 769px) and (max-width: 990px) {
-  .Principal {
+  .principal {
     padding-top: 5px;
     background-color: rgb(81, 85, 126);
   }
@@ -219,7 +236,7 @@ body {
   }
 }
 @media (min-width: 991px) {
-  .Principal {
+  .principal {
     padding-top: 5px;
     background-color: rgb(81, 85, 126);
   }
@@ -502,7 +519,7 @@ body {
   }
 }
 @media (min-width: 769px) and (max-width: 990px) {
-  .Principal {
+  .principal {
     padding-top: 5px;
     background-color: rgb(81, 85, 126);
   }
@@ -527,7 +544,7 @@ body {
   }
 }
 @media (min-width: 991px) {
-  .Principal {
+  .principal {
     padding-top: 5px;
     background-color: rgb(81, 85, 126);
   }
@@ -695,17 +712,7 @@ body {
     opacity: 1;
   }
 }
-@-webkit-keyframes fotoAutor {
-  0% {
-    transform: rotate(-540deg) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) scale(1);
-    opacity: 1;
-  }
-}
-@keyframes fotoAutor {
+@keyframes swirl-in-fwd {
   0% {
     transform: rotate(-540deg) scale(0);
     opacity: 0;
