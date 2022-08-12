@@ -8,12 +8,21 @@
         font-size: 250%;
         text-align: center;
     }
+    .navbarNav{
+        list-style: none;
+        font-family: serif;
+        font-size: 100%;
+    }
     .nav {
+        font-size: 100%;
         background-color: $bkg-first;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .nav-link {
+        color: black;
     }
 }
 @include small {
@@ -23,17 +32,19 @@
         font-size: 250%;
         text-align: center;
     }
-
+    .navbarNav{
+        list-style: none;
+        font-family: serif;
+        font-size: 100%;
+    }
     .nav {
         background-color: $bkg-first;
         display: flex;
         flex-direction: row;
     }
-
     .nav-link {
         color: black;
     }
-
 }
 @include medium {
     .navbar-brand {    
@@ -42,7 +53,7 @@
         font-size: 300%;
         text-align: left;
     }
-    #navbarNav{
+    .navbarNav{
         align-items: baseline;
         list-style: none;
         font-family: serif;
@@ -72,7 +83,7 @@
         font-size: 400%;
         text-align: left;
     }
-    #navbarNav{
+    .navbarNav{
         align-items: baseline;
         list-style: none;
         font-family: serif;
@@ -86,5 +97,8 @@
         background-color: $bkg-third;
         border-color:$bkg-second $bkg-second $bkg-third $bkg-second;
         color: white;
+    }
+    .nav-link {
+        color: black;
     }
 }
